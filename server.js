@@ -53,4 +53,16 @@ else if (req.url === "/contact") {
         `;
     }
 
+//========================================================
+    //About section
+
+    else if (req.url === "/about") {
+        content = `
+            <h1>About Page</h1>
+            <p>This page contains information about our website and project.</p>
+            ${navigation}
+        `;
+    }
+    
+
     

@@ -63,6 +63,23 @@ else if (req.url === "/contact") {
             ${navigation}
         `;
     }
+
+    //===============================================
+    //404 page not found
+    else {
+        statusCode = 404;
+
+        content = `
+            <h1>404 - Page Not Found</h1>
+            <p>The page you are looking for does not exist.</p>
+            ${navigation}
+        `;
+    }
+
+    // Send headers only ONCE
+    res.writeHead(statusCode, {
+        "Content-Type": "text/html"
+    });
     
 
     

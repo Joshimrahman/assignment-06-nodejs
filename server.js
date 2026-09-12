@@ -80,6 +80,30 @@ else if (req.url === "/contact") {
     res.writeHead(statusCode, {
         "Content-Type": "text/html"
     });
+
+
+    //=======================================================
+
+    // Send HTTP Response
+    res.end(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Simple Node.js Server</title>
+        </head>
+
+        <body>
+            ${content}
+        </body>
+        </html>
+    `);
+});
+
+server.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+});
     
 
     

@@ -41,3 +41,16 @@ else if (req.url === "/blog") {
             ${navigation}
         `;
     }
+
+    //=================================================
+    // Contact Section
+    
+else if (req.url === "/contact") {
+        content = `
+            <h1>Contact Page</h1>
+            <p>You can contact us for more information.</p>
+            ${navigation}
+        `;
+    }
+
+    

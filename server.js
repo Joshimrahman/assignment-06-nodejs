@@ -29,3 +29,15 @@ const server = http.createServer((req, res) => {
             ${navigation}
         `;
     }
+
+
+     //============================================================ 
+    // Blog section
+    
+else if (req.url === "/blog") {
+        content = `
+            <h1>Blog Page</h1>
+            <p>Welcome to our blog. Here you can read interesting articles.</p>
+            ${navigation}
+        `;
+    }

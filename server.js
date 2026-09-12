@@ -18,3 +18,14 @@ const server = http.createServer((req, res) => {
 
     let content;
     let statusCode = 200;
+
+    //========================================================
+    // Home Page section
+    
+    if (req.url === "/") {
+        content = `
+            <h1>Home Page</h1>
+            <p>Welcome to our simple Node.js HTTP server.</p>
+            ${navigation}
+        `;
+    }
